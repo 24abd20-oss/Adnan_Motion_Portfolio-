@@ -16,108 +16,958 @@ body{
 
 header{
     text-align:center;
-    padding:50px 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.profile{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #00c3ff;
-}
+  <title>Mohammad Abdullah Adnan | Motion Designer & Video Editor</title>
 
-h1{
-    margin-top:20px;
-}
+  <meta name="description" content="Mohammad Abdullah Adnan - Motion Designer and Video Editor specializing in motion graphics, reels, video editing and visual storytelling.">
 
-.section{
-    max-width:900px;
-    margin:auto;
-    padding:30px 20px;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-.work{
-    background:#1f1f1f;
-    padding:15px;
-    margin:10px 0;
-    border-radius:10px;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #08080b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-a{
-    color:#00c3ff;
-    text-decoration:none;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#1a1a1a;
-}
-</style>
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: relative;
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(5,5,10,.92) 0%, rgba(5,5,10,.70) 45%, rgba(5,5,10,.25) 100%),
+        url("file_0000000023c88230939d540e971f20d0.jpeg") center/cover no-repeat;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, #08080b 0%, transparent 45%);
+      pointer-events: none;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 22px 0;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      width: min(1120px, 92%);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      color: #d7d7df;
+    }
+
+    .nav-links a:hover {
+      color: #b57aff;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      padding-top: 80px;
+      max-width: 720px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(190, 130, 255, 0.45);
+      border-radius: 999px;
+      background: rgba(120, 60, 180, 0.18);
+      color: #dbb9ff;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(44px, 7vw, 84px);
+      line-height: 0.98;
+      margin-bottom: 18px;
+      letter-spacing: -2px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff, #c887ff, #8a65ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #d0d0d8;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: .25s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #8a4dff, #bb63ff);
+      box-shadow: 0 10px 30px rgba(130, 70, 255, .25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(130, 70, 255, .35);
+    }
+
+    .btn-secondary {
+      border: 1px solid #383846;
+      background: rgba(255,255,255,.04);
+      color: #eee;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,.08);
+      transform: translateY(-2px);
+    }
+
+    /* ================= GENERAL ================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: #9696a3;
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #111118, #0c0c11);
+      border: 1px solid #242430;
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .about-text {
+      color: #cfcfd8;
+      font-size: 16px;
+    }
+
+    .mini-profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .avatar {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #8b4dff, #c96dff);
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .mini-profile strong {
+      display: block;
+      font-size: 17px;
+    }
+
+    .mini-profile span {
+      color: #9696a3;
+      font-size: 13px;
+    }
+
+    /* ================= SKILLS ================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .skill {
+      background: #101017;
+      border: 1px solid #23232f;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .skill-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .skill-name {
+      font-weight: 700;
+    }
+
+    .skill-percent {
+      color: #a86cff;
+      font-weight: 700;
+    }
+
+    .bar {
+      height: 8px;
+      background: #22222c;
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #7844ff, #cb6bff);
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      padding: 26px;
+      border-radius: 18px;
+      background: #101017;
+      border: 1px solid #23232f;
+      transition: .25s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      border-color: #7542d9;
+    }
+
+    .service-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .service h3 {
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: #a5a5b0;
+      font-size: 14px;
+    }
+
+    /* ================= PROJECTS ================= */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      padding: 26px;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at top right, rgba(130,70,255,.18), transparent 35%),
+        #101017;
+      border: 1px solid #272733;
+      transition: .25s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: #7542d9;
+    }
+
+    .project-number {
+      color: #a96bff;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      font-size: 21px;
+      margin-bottom: 9px;
+    }
+
+    .project p {
+      color: #9898a5;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #d3a7ff;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .project-link:hover {
+      color: #ffffff;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 30px;
+      padding: 35px;
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(130,70,255,.18), transparent 35%),
+        #101017;
+      border: 1px solid #272733;
+    }
+
+    .contact-text p {
+      color: #9f9faa;
+      max-width: 560px;
+      margin-bottom: 20px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .contact-item {
+      padding: 15px 17px;
+      border-radius: 12px;
+      border: 1px solid #282834;
+      background: #0c0c11;
+      transition: .2s ease;
+    }
+
+    .contact-item:hover {
+      border-color: #7442d8;
+      transform: translateX(3px);
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid #1d1d27;
+      color: #777783;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
+      .about-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      header {
+        min-height: 650px;
+        background-position: 60% center;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content {
+        padding-top: 70px;
+      }
+
+      .hero-content h1 {
+        font-size: 48px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .skills-grid,
+      .projects-grid,
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+
+      .card,
+      .project,
+      .service,
+      .contact-box {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <!-- ================= HERO ================= -->
 
-<img src="file_0000000023c88230939d540e971f20d0.jpeg" alt="Profile Photo" class="profile">
+  <header id="home">
 
-<h1>Mohammad Abdullah Adnan</h1>
+    <nav>
+      <div class="nav-inner">
+        <div class="logo">ADNAN</div>
 
-<p>Motion Designer & Video Editor</p>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-</header>
+    <div class="container">
+      <div class="hero-content">
 
-<div class="section">
+        <span class="badge">Available for Freelance Projects</span>
 
-<h2>About Me</h2>
+        <h1>
+          Mohammad Abdullah
+          <span class="gradient-text">Adnan</span>
+        </h1>
 
-<p>
-I am a Motion Designer and Video Editor specializing in social media content,
-promotional videos, reels, advertisements, and visual storytelling.
-</p>
+        <p>
+          Motion Designer & Video Editor creating engaging visual stories
+          through motion graphics, reels, promotional videos and creative editing.
+        </p>
 
-</div>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
 
-<div class="section">
+          <a class="btn btn-secondary"
+             href="https://wa.me/8801632880064"
+             target="_blank">
+             Hire Me on WhatsApp
+          </a>
+        </div>
 
-<h2>My Projects</h2>
+      </div>
+    </div>
 
-<div class="work">Project 1 - Motion Graphics Advertisement</div>
+  </header>
 
-<div class="work">Project 2 - Social Media Reel Editing</div>
 
-<div class="work">Project 3 - Corporate Promo Video</div>
+  <!-- ================= ABOUT ================= -->
 
-<div class="work">Project 4 - YouTube Video Editing</div>
+  <section id="about">
+    <div class="container">
 
-<div class="work">Project 5 - Product Commercial</div>
+      <h2 class="section-title">About Me</h2>
 
-<div class="work">Project 6 - Showreel</div>
+      <p class="section-subtitle">
+        A creative video professional focused on clean editing,
+        motion design and compelling visual storytelling.
+      </p>
 
-</div>
+      <div class="about-grid">
 
-<div class="section">
+        <div class="card">
+          <p class="about-text">
+            I am Mohammad Abdullah Adnan, a Motion Designer and Video Editor
+            specializing in social media content, motion graphics,
+            reels, advertisements, documentary editing and promotional videos.
+          </p>
 
-<h2>Contact</h2>
+          <br>
 
-<p>Email: 24abd20@gmail.com</p>
+          <p class="about-text">
+            My goal is simple: turn ideas into visually engaging content
+            that looks professional, communicates clearly and keeps the audience engaged.
+          </p>
 
-<p>
-Facebook:
-<a href="https://www.facebook.com/mohammad.abdullah.al.adnan">
-Visit My Facebook
-</a>
-</p>
+          <div class="mini-profile">
+            <div class="avatar">MAA</div>
 
-</div>
+            <div>
+              <strong>Mohammad Abdullah Adnan</strong>
+              <span>Motion Designer & Video Editor</span>
+            </div>
+          </div>
+        </div>
 
-<footer>
+        <div class="card">
+          <h3>What I Focus On</h3>
 
-<p>© 2026 Mohammad Abdullah Adnan</p>
+          <br>
 
-</footer>
+          <p class="about-text">• Motion Graphics</p>
+          <p class="about-text">• Video Editing</p>
+          <p class="about-text">• Social Media Reels</p>
+          <p class="about-text">• Promotional Videos</p>
+          <p class="about-text">• Documentary Editing</p>
+          <p class="about-text">• Visual Storytelling</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="skills">
+    <div class="container">
+
+      <h2 class="section-title">Skills</h2>
+
+      <p class="section-subtitle">
+        Tools and creative skills I use in my work.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Adobe After Effects</span>
+            <span class="skill-percent">95%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:95%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Adobe Premiere Pro</span>
+            <span class="skill-percent">92%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:92%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Motion Graphics</span>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:90%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Video Editing</span>
+            <span class="skill-percent">95%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:95%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Adobe Photoshop</span>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:80%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span class="skill-name">Social Media Content</span>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="bar">
+            <span style="width:90%"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+
+  <section id="services">
+    <div class="container">
+
+      <h2 class="section-title">Services</h2>
+
+      <p class="section-subtitle">
+        Creative services for brands, creators, businesses and social media.
+      </p>
+
+      <div class="services-grid">
+
+        <div class="service">
+          <div class="service-icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>
+            Professional editing for YouTube, social media,
+            promotional and corporate videos.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">✨</div>
+          <h3>Motion Graphics</h3>
+          <p>
+            Dynamic motion graphics, titles, animations
+            and visual effects for engaging content.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📱</div>
+          <h3>Reels & Shorts</h3>
+          <p>
+            Fast-paced, engaging and modern edits for
+            Instagram, Facebook and YouTube Shorts.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📢</div>
+          <h3>Advertisement Videos</h3>
+          <p>
+            Promotional videos designed to communicate your
+            product or service clearly and effectively.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🎥</div>
+          <h3>Documentary Editing</h3>
+          <p>
+            Story-driven documentary editing with
+            pacing, transitions, sound and visual flow.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🎨</div>
+          <h3>Creative Visuals</h3>
+          <p>
+            Creative visual storytelling and polished
+            presentation for digital content.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="projects">
+    <div class="container">
+
+      <h2 class="section-title">Featured Projects</h2>
+
+      <p class="section-subtitle">
+        Selected examples of my work. Click a project to view it.
+      </p>
+
+      <div class="projects-grid">
+
+        <div class="project">
+          <div class="project-number">PROJECT 01</div>
+
+          <h3>After Effects • Motion Graphics</h3>
+
+          <p>
+            Motion graphics work created with Adobe After Effects.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/groups/1426945381833174/permalink/1717431402784569/"
+             target="_blank">
+             View Project →
+          </a>
+        </div>
+
+
+        <div class="project">
+          <div class="project-number">PROJECT 02</div>
+
+          <h3>Motion Graphics</h3>
+
+          <p>
+            Creative motion graphics project focused on engaging visual presentation.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/groups/1426945381833174/permalink/1706848947176148/"
+             target="_blank">
+             View Project →
+          </a>
+        </div>
+
+
+        <div class="project">
+          <div class="project-number">PROJECT 03</div>
+
+          <h3>3D Documentary</h3>
+
+          <p>
+            Documentary-style project combining editing,
+            storytelling and visual presentation.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/groups/1426945381833174/permalink/1725782105282832/"
+             target="_blank">
+             View Project →
+          </a>
+        </div>
+
+
+        <div class="project">
+          <div class="project-number">PROJECT 04</div>
+
+          <h3>Premiere Pro Video Edit</h3>
+
+          <p>
+            Professional video editing project created with Adobe Premiere Pro.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/groups/1426945381833174/permalink/1755062015688174/"
+             target="_blank">
+             View Project →
+          </a>
+        </div>
+
+
+        <div class="project">
+          <div class="project-number">PROJECT 05</div>
+
+          <h3>Reels Video Edit</h3>
+
+          <p>
+            Social media reel editing focused on pacing,
+            engagement and modern visual style.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/groups/1426945381833174/permalink/1774316080429434/"
+             target="_blank">
+             View Project →
+          </a>
+        </div>
+
+
+        <div class="project">
+          <div class="project-number">MORE PROJECTS</div>
+
+          <h3>More Creative Work</h3>
+
+          <p>
+            More projects and creative experiments will be added here over time.
+          </p>
+
+          <a class="project-link"
+             href="https://www.facebook.com/mohammad.abdullah.al.adnan"
+             target="_blank">
+             Visit Facebook →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-box">
+
+        <div class="contact-text">
+
+          <h2 class="section-title">Let's Work Together</h2>
+
+          <p>
+            Have a video project, social media campaign,
+            motion graphics idea or promotional content?
+            Feel free to contact me.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary"
+               href="https://wa.me/8801632880064"
+               target="_blank">
+               WhatsApp Me
+            </a>
+
+            <a class="btn btn-secondary"
+               href="mailto:24abd20@gmail.com">
+               Send Email
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-links">
+
+          <a class="contact-item"
+             href="mailto:24abd20@gmail.com">
+             📧 24abd20@gmail.com
+          </a>
+
+          <a class="contact-item"
+             href="https://wa.me/8801632880064"
+             target="_blank">
+             💬 WhatsApp: 01632880064
+          </a>
+
+          <a class="contact-item"
+             href="https://www.facebook.com/mohammad.abdullah.al.adnan"
+             target="_blank">
+             🔵 Facebook Profile
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <div>
+          © 2026 Mohammad Abdullah Adnan. All rights reserved.
+        </div>
+
+        <div>
+          Motion Designer • Video Editor
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
 
 </body>
 </html>
